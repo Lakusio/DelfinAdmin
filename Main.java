@@ -34,6 +34,12 @@ public class Main
       String bruger;
       String kode;
       
+      System.out.println("Folgenden bruger kan anvendes til login: ");
+      System.out.println("Formand:  Bruger = formand \n          Kodeord = formand  ");
+      System.out.println("Kasser:   Bruger = kasser \n          Kodeord = kasser  ");
+      System.out.println("Traener:  Bruger = traener \n          Kodeord = traener \n");
+
+      
       System.out.print("Brugernavn:");
       bruger = input.next();
       
@@ -99,8 +105,8 @@ public class Main
          System.out.println("-----------");
          System.out.println("Du har nu folgende valg muligheder");
          System.out.println("1. Aendre kontingent og rabat");
-         System.out.println("2. Lav opkraevning");
-         System.out.println("3. Udskriv restanceliste");
+         System.out.println("2. Udskriv restanceliste");
+         System.out.println("3. Lav opkraevning");
          System.out.println("x. Log ud");
          System.out.print("Indtast dit valg: ");
          String svar = input.next().toLowerCase();
@@ -109,9 +115,9 @@ public class Main
          {
             case "1":   IkkeImplementeret();
                         break;
-            case "2":   Opkraevning();
+            case "2":   RestanceListe();
                         break;
-            case "3":   RestanceListe();
+            case "3":   Opkraevning();
                         break;
             case "x":   exit = true;
                         break;
